@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://open-eshop.stqa.ru/" />
+<title>blank</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">blank</td></tr>
+</thead><tbody>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.page-header &gt; h1</td>
+	<td>Coupon</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=input[name=&quot;name&quot;]</td>
+	<td>${couponName}</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>css=input[name=&quot;name&quot;]</td>
+	<td>${couponName}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[.='Search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForTable</td>
+	<td>//div[@class='table-responsive']/table.1.0</td>
+	<td>${couponName}</td>
+</tr>
+</tbody></table>
+</body>
+</html>
